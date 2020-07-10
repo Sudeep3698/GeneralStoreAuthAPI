@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1 Vendor Login
+	p Please only vendor can login below
+	form(method='post', action= '/vendors/login')
+		.form-group
+			label Username
+			input.form-control(name='username', type='text')
+		.form-group
+			label Mobile Number
+			input.form-control(name='mobile', type='number')		
+		.form-group
+			label Vendor Code
+			input.form-control(name='adminCode', type='text')
+		input.btn.btn-default(name='submit', type='submit', value='Login')

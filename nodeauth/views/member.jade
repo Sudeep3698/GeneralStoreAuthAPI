@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h1 Members Page
+	p Welcome #{user.name}
+
+	.table-responsive
+		.table-responsive
+			table.table
+				thead
+					tr.active
+						th(width='200') ID
+						th(width='200') Name
+						th(width='200') Username
+						th(width='200') Role
+				tbody
+					each user in users
+						tr
+							td #{user._id}
+							td #{user.name}
+							td #{user.username}
+							td #{user.role}
