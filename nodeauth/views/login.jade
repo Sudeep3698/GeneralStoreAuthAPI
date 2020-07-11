@@ -1,6 +1,7 @@
 extends layout
 
 block content
+    img(src='/images/Bg 2.1.png', height="200px", width="1100px")
     h1 Login
     p Please login below
     form(method='post', action= '/users/login')
@@ -11,3 +12,10 @@ block content
             label Password
             input.form-control(name='password', type='password')
         input.btn.btn-default(name='submit', type='submit', value='Login')
+
+    .img(style='padding:10px; margin:10px;')
+        img(src='/images/object 1.png', height="180px", width="200px")
+        img(src='/images/object 2.png', height="180px", width="200px")    
+        img(src='/images/object 3.png', height="180px", width="200px")
+        img(src='/images/icon _fb.png', height="180px", width="200px")
+        img(src='/images/icon _google.png', height="180px", width="200px")    
